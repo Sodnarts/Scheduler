@@ -1,20 +1,21 @@
 {
   "projects": {
-    "prod": "sfoos-prod",
-    "dev": "sfoos-dev"
+    "prod": "sodnarts-todo",
+    "dev": "sodnarts-todo",
+    "default": "sodnarts-todo"
   },
   "targets": {
     "sfoos-prod": {
       "hosting": {
         "prod": [
-          "ssports"
+          "scheduler"
         ]
       }
     },
     "sfoos-dev": {
       "hosting": {
         "dev": [
-          "sfoos-dev"
+          "scheduler-dev"
         ]
       }
     }
