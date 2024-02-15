@@ -1,5 +1,4 @@
 import './Calendar.styles.scss';
-import { ReactComponent as ReactLogo } from '../../assets/Logo.svg';
 import { CircledNumber, NumberBackgroundColor, NumberColor } from '../../components/circled-number/CircledNumber';
 import { getDatePosition } from '../../utils/getDatePosition';
 import { getMonth } from '../../utils/getMonth';
@@ -36,7 +35,6 @@ const Calendar = () => {
 
   return (
     <div className="calendar--container">
-      <ReactLogo className="calendar--logo" />
       <Weekdays />
       <div className="calendar--grid calendar--grid--left-align">
         <p

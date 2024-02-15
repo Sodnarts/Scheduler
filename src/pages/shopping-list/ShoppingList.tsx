@@ -1,5 +1,4 @@
 import './ShoppingList.styles.scss';
-import { ReactComponent as ReactLogo } from '../../assets/Logo.svg';
 import { ReactComponent as Cart } from '../../assets/Cart.svg';
 import { InputLine } from '../../components/input-line/InputLine';
 import { useEffect, useState } from 'react';
@@ -65,7 +64,6 @@ const ShoppingList = () => {
 
   return (
     <div className="shopping-list--container">
-      <ReactLogo className="shopping-list--logo" />
       <div className="shopping-list--input-container">
         {list.map((l, i) => (
           <InputLine

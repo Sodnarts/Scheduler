@@ -1,12 +1,6 @@
 .menu {
   &--container {
     height: calc(100% - 6.4rem);
-  }
-
-  &--logo {
-    position: relative;
-    transform: translateX(-50%);
-    left: 50%;
-    margin: 3.2rem 0;
+    margin-top: 4.8rem;
   }
 }

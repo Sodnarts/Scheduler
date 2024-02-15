@@ -1,5 +1,4 @@
 import './TodoCreate.styles.scss';
-import { ReactComponent as ReactLogo } from '../../assets/Logo.svg';
 import { InputField } from '../../components/input-field/InputField';
 import { useEffect, useState } from 'react';
 import { getMonth } from '../../utils/getMonth';
@@ -51,7 +50,6 @@ const TodoCreate = () => {
 
   return (
     <div className="todo-create--container">
-      <ReactLogo className="todo-create--logo" />
       <InputField
         className="todo-create--input-field"
         label="Todo"

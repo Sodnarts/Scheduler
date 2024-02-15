@@ -1,5 +1,4 @@
 import './ShoppingCart.styles.scss';
-import { ReactComponent as ReactLogo } from '../../assets/Logo.svg';
 import { ReactComponent as Receipt } from '../../assets/Receipt.svg';
 import { ReactComponent as Checkmark } from '../../assets/Checkmark.svg';
 import { useHouseholdContext } from '../../hooks/useHouseholdContext';
@@ -73,7 +72,6 @@ const ShoppingCart = () => {
 
   return (
     <div className="shopping-cart--container">
-      <ReactLogo className="shopping-cart--logo" />
       <div className="shopping-cart--input-container">
         {list.map((l, i) => (
           <Selector

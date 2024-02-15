@@ -1,5 +1,4 @@
 import './Menu.styles.scss';
-import { ReactComponent as ReactLogo } from '../../assets/Logo.svg';
 import { MenuRow } from '../../components/menu-row/MenuRow';
 import { useEffect, useState } from 'react';
 import { useHouseholdContext } from '../../hooks/useHouseholdContext';
@@ -41,8 +40,6 @@ const Menu = () => {
 
   return (
     <div className="menu--container">
-      <ReactLogo className="menu--logo" />
-
       {weeklyMenu.weekOne.map((m, i) => (
         <MenuRow
           key={`week-one-menu-${i}`}

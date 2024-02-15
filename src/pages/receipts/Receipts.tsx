@@ -1,4 +1,3 @@
-import { ReactComponent as ReactLogo } from '../../assets/Logo.svg';
 import { Card } from '../../components/cards/Card';
 import { Loader } from '../../components/loader/Loader';
 import { useHouseholdContext } from '../../hooks/useHouseholdContext';
@@ -12,7 +11,6 @@ const Receipts = () => {
 
   return (
     <div className="receipts--container">
-      <ReactLogo className="receipts--logo" />
       <div className="receipts--list">
         {household.receipts
           .sort((a, b) => b.date.toMillis() - a.date.toMillis())

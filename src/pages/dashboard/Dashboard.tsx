@@ -1,6 +1,5 @@
 import { useHouseholdContext } from '../../hooks/useHouseholdContext';
 import './Dashboard.styles.scss';
-import { ReactComponent as ReactLogo } from '../../assets/Logo.svg';
 import { ReactComponent as Calendar } from '../../assets/Calendar.svg';
 import { ReactComponent as List } from '../../assets/List.svg';
 import { ReactComponent as Menu } from '../../assets/Menu.svg';
@@ -28,7 +27,6 @@ const Dashboard = () => {
 
   return (
     <div className="dashboard--container">
-      <ReactLogo className="dashboard--logo" />
       <h1 className="dashboard--house-name">{household?.name}</h1>
       <p className="dashboard--house-code">{household?.id}</p>
       <div className="dashboard--content--container">

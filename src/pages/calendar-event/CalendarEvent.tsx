@@ -1,5 +1,4 @@
 import './CalendarEvent.styles.scss';
-import { ReactComponent as ReactLogo } from '../../assets/Logo.svg';
 import { InputField } from '../../components/input-field/InputField';
 import { useEffect, useState } from 'react';
 import { getMonth } from '../../utils/getMonth';
@@ -45,7 +44,6 @@ const CalendarEvent = () => {
 
   return (
     <div className="calendar-event--container">
-      <ReactLogo className="calendar-event--logo" />
       <InputField
         className="calendar-event--input-field"
         label="Event"

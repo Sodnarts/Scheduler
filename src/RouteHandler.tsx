@@ -13,10 +13,12 @@ import { Calendar } from './pages/calendar/Calendar';
 import { CalendarEvent } from './pages/calendar-event/CalendarEvent';
 import { TodoList } from './pages/todo-list/TodoList';
 import { TodoCreate } from './pages/todo-create/TodoCreate';
+import { Logo } from './components/logo/Logo';
 
 const RouteHandlerBase = () => {
   return (
     <BrowserRouter>
+      <Logo />
       <NavBar />
       <Routes>
         <Route path={routes.dashboard} element={<Dashboard />} />
