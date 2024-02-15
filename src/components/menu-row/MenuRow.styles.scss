@@ -1,0 +1,36 @@
+.menu-row {
+  &--container {
+    width: 100%;
+    height: 4rem;
+    border-top: 1px solid var(--color-primary-80);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &--border-bottom {
+      border-bottom: 1px solid var(--color-primary-80);
+    }
+  }
+
+  &--text {
+    font-size: 1.4rem;
+    width: 8.4rem;
+    text-align: start;
+    margin-left: 1.6rem;
+  }
+
+  &--divider {
+    width: 2px;
+    height: 100%;
+    background-color: var(--color-primary-80);
+  }
+
+  &--input {
+    font-size: 1.4rem;
+    margin-left: 1.6rem;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    flex-grow: 2;
+  }
+}

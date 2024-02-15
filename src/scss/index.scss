@@ -1,0 +1,64 @@
+@import './variables.scss';
+@import './z-index.scss';
+
+body {
+  background-color: var(--color-background);
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  font-size: 62.5%;
+  font-family: Roboto;
+
+  color: var(--color-white);
+
+  &::-webkit-scrollbar {
+    @media only screen and (min-width: 37.5em) {
+      width: 0.8rem;
+    }
+  }
+
+  &::-webkit-scrollbar-thumb {
+    @media only screen and (min-width: 37.5em) {
+      background-color: var(--color-primary-60);
+      border-radius: 5rem;
+    }
+  }
+
+  &::-webkit-scrollbar-track {
+    @media only screen and (min-width: 37.5em) {
+      background-color: transparent;
+    }
+  }
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  overflow: hidden;
+}
+
+::-moz-selection {
+  color: var(--color-background);
+  background: var(--color-primary);
+}
+
+::selection {
+  color: var(--color-background);
+  background: var(--color-primary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+  color: var(--color-text);
+  font-weight: 100;
+  text-align: center;
+}

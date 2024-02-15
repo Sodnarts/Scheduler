@@ -1,0 +1,45 @@
+.z-index {
+  &--10 {
+    z-index: var(--z-index-10);
+  }
+
+  &--20 {
+    z-index: var(--z-index-20);
+  }
+
+  &--21 {
+    z-index: var(--z-index-21);
+  }
+
+  &--22 {
+    z-index: var(--z-index-22);
+  }
+  
+  &--23 {
+    z-index: var(--z-index-23);
+  }
+
+  &--30 {
+    z-index: var(--z-index-30);
+  }
+
+  &--40 {
+    z-index: var(--z-index-40);
+  }
+
+  &--50 {
+    z-index: var(--z-index-50);
+  }
+
+  &--100 {
+    z-index: var(--z-index-100);
+  }
+
+  &--nav-bar {
+    z-index: var(--z-index-nav-bar);
+  }
+
+  &--modal {
+    z-index: var(--z-index-modal);
+  }
+}

@@ -1,0 +1,55 @@
+.todo-card {
+  &--container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% - 7.2rem);
+    background: var(--color-background-light);
+    border-radius: 1.2rem;
+    margin: 0.6rem 2.4rem;
+    padding: 1.2rem 1.2rem;
+  }
+
+  &--action {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+  }
+
+  &--icon {
+    width: 3.6rem;
+    height: 3.6rem;
+
+    &-small {
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+
+  &--content {
+    margin-left: 1.2rem;
+  }
+
+  &--task {
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 0;
+    margin-bottom: 0.6rem;
+    text-align: start;
+  }
+
+  &--due {
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 0;
+    color: var(--color-primary);
+    text-align: start;
+  }
+
+  &--delete {
+    text-align: end;
+    width: 2.4rem;
+    height: 2.4rem;
+    margin-right: 0.6rem;
+  }
+}

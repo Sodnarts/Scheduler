@@ -1,0 +1,53 @@
+.nav {
+  &--container {
+    background-color: var(--color-background-light);
+    height: 6.4rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: var(--z-index-nav-bar);
+    border-bottom: 1px solid var(--color-navbar-border);
+
+    @media only screen and (max-width: 37.5em) {
+      position: fixed;
+      bottom: 0;
+      border-bottom: none;
+      align-items: start;
+    }
+  }
+
+  &--link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    color: var(--color-navbar-label);
+    text-decoration: none;
+
+    &-active > span {
+      color: var(--color-primary);
+    }
+
+    & > span {
+      font-size: 2.4rem;
+    }
+
+    @media only screen and (max-width: 37.5em) {
+      margin-top: 1.2rem;
+
+      & > span {
+        display: none;
+      }
+    }
+  }
+
+  &--icon {
+    display: none;
+
+    @media only screen and (max-width: 37.5em) {
+      display: inline;
+      margin-bottom: 0.6rem;
+    }
+  }
+}

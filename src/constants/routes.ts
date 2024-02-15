@@ -1,0 +1,17 @@
+export const routes = {
+  dashboard: '/',
+  shoppingList: '/shopping-list',
+  shoppingCart: '/shopping-cart',
+  receipts: '/receipts',
+  menu: '/menu',
+  calendar: '/calendar',
+  calendarEvent: '/calendar-event',
+  createTodo: '/create-todo',
+  todos: '/todos',
+  settings: '/settings',
+  signIn: '/sign-in',
+  signUp: '/sign-up',
+  household: '/household',
+  householdJoin: '/household/join',
+  householdCreate: '/household/create',
+};

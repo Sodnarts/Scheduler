@@ -1,0 +1,22 @@
+{
+  "projects": {
+    "prod": "sfoos-prod",
+    "dev": "sfoos-dev"
+  },
+  "targets": {
+    "sfoos-prod": {
+      "hosting": {
+        "prod": [
+          "ssports"
+        ]
+      }
+    },
+    "sfoos-dev": {
+      "hosting": {
+        "dev": [
+          "sfoos-dev"
+        ]
+      }
+    }
+  }
+}

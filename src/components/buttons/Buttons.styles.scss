@@ -1,0 +1,143 @@
+.button {
+  width: 16rem;
+  box-sizing: border-box;
+  height: 4.4rem;
+  min-height: 4.4rem;
+  font-size: 1.8rem;
+  letter-spacing: 3px;
+  border-radius: 10rem;
+  cursor: pointer;
+
+  &--primary {
+    position: relative;
+    background-color: var(--color-primary);
+    border: none;
+    color: var(--color-black);
+    z-index: 1;
+  }
+
+  &--secondary {
+    background-color: var(--color-background);
+    border: 2px solid var(--color-primary);
+    transition: all 0.1s linear;
+
+    &:hover {
+      background-color: var(--color-primary);
+      color: black;
+    }
+  }
+
+  &--disabled {
+    opacity: 0.3;
+    cursor: default;
+  }
+
+  &--action {
+    position: absolute;
+    background-color: var(--color-primary);
+    border: none;
+    border-radius: 50rem;
+    height: 4.4rem;
+    width: 4.4rem;
+    top: 8rem;
+    right: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 4px 2px rgba(50, 252, 178, 0.15);
+
+    &:hover {
+      background-color: var(--color-primary-dark);
+    }
+
+    & > svg {
+      width: 2rem;
+    }
+
+    @media only screen and (max-width: 37.5em) {
+      top: unset;
+      bottom: 8rem;
+    }
+  }
+
+  &--action-bar {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    &--icon-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 4.4rem;
+      height: 4.4rem;
+      border: 2px solid var(--color-primary);
+      border-radius: 5rem;
+      margin-bottom: 0.4rem;
+
+      & > svg {
+        width: 2.8rem;
+      }
+    }
+
+    &--label {
+      font-size: 1rem;
+      font-weight: 300;
+      letter-spacing: 1px;
+    }
+
+    &:hover &--label,
+    &:focus &--label {
+      color: var(--color-primary);
+    }
+  }
+
+  &--alternative {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    background-color: var(--color-background-dark);
+    border: none;
+    width: 100%;
+    border-radius: 0.6rem;
+    margin-top: 2.4rem;
+    text-align: start;
+    padding-left: 2.4rem;
+    padding-right: 4.4rem;
+
+    &-chevron {
+      position: absolute;
+      right: 2.4rem;
+      font-size: 2rem;
+    }
+    &--suffix {
+      font-size: 1.2rem;
+    }
+
+    &--light {
+      background-color: var(--color-background);
+      margin-top: 1.6rem;
+    }
+  }
+
+  &--loader {
+    position: relative;
+    top: unset;
+    left: unset;
+    transform: unset;
+
+    &--spinner {
+      width: 2rem;
+      height: 2rem;
+      border: 0.4rem solid var(--color-primary-dark);
+      border-top: 0.4rem solid var(--color-white);
+    }
+  }
+
+  &--small {
+    font-size: 1.2rem;
+    width: 10rem;
+  }
+}
