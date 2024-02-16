@@ -30,7 +30,7 @@ const Menu = () => {
   const onChange = (week: Week, day: Day, value: string) => {
     const tmpMenu = { ...weeklyMenu };
 
-    !!week ? (tmpMenu.weekOne[day].menuItem = value) : (tmpMenu.weekTwo[day].menuItem = value);
+    !week ? (tmpMenu.weekOne[day].menuItem = value) : (tmpMenu.weekTwo[day].menuItem = value);
     setWeeklyMenu(tmpMenu);
   };
 

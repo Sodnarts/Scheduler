@@ -52,7 +52,6 @@ const SignIn = () => {
           type={InputType.EMAIL}
           color={InputColor.GREEN}
           error={emailError}
-          autoFocus
           className="sign-in--input"
         />
         <InputField

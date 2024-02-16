@@ -16,11 +16,16 @@ import { EventWithMonth } from '../../types/EventWithMonth';
 
 const Dashboard = () => {
   const [reminders, setReminders] = useState<EventWithMonth[]>([]);
+  const [menu, setMenu] = useState<string>('');
   const { household } = useHouseholdContext();
   const navigate = useNavigate();
 
   useEffect(() => {
-    household && setReminders(findReminders(household.calendar));
+    if (!household) return;
+    setReminders(findReminders(household.calendar));
+
+    let today = new Date().getDay() === 0 ? 6 : new Date().getDay() - 1;
+    setMenu(household.weeklyMenu.weekOne.find((m) => m.day === today)?.menuItem ?? '');
   }, [household]);
 
   if (!household) return <Loader />;
@@ -29,10 +34,12 @@ const Dashboard = () => {
     <div className="dashboard--container">
       <h1 className="dashboard--house-name">{household?.name}</h1>
       <p className="dashboard--house-code">{household?.id}</p>
-      <div className="dashboard--content--container">
-        <p className="dashboard--content--today--label">Today's dish</p>
-        <p className="dashboard--content--today">Fish 'N Chips</p>
-      </div>
+      {!!menu.length && (
+        <div className="dashboard--content--container">
+          <p className="dashboard--content--today--label">Today's dish</p>
+          <p className="dashboard--content--today">{menu}</p>
+        </div>
+      )}
       {!!reminders.length && (
         <div className="dashboard--reminders--container">
           <p className="dashboard--reminders--label">Reminders</p>

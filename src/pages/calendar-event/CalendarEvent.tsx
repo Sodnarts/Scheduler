@@ -50,7 +50,6 @@ const CalendarEvent = () => {
         placeholder="What's happening?"
         value={eventName}
         color={InputColor.GREEN}
-        autoFocus
         onChange={setEventName}
       />
       <div className="calendar-event--radio-group">

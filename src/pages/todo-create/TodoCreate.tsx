@@ -56,7 +56,6 @@ const TodoCreate = () => {
         placeholder="What needs to be done?"
         color={InputColor.GREEN}
         value={taskName}
-        autoFocus
         onChange={setTaskName}
       />
       <div className="todo-create--radio-group">

@@ -5,17 +5,13 @@
     "default": "sodnarts-todo"
   },
   "targets": {
-    "sfoos-prod": {
+    "sodnarts-todo": {
       "hosting": {
         "prod": [
-          "scheduler"
-        ]
-      }
-    },
-    "sfoos-dev": {
-      "hosting": {
+          "sodnarts-scheduler"
+        ],
         "dev": [
-          "scheduler-dev"
+          "sodnarts-scheduler-dev"
         ]
       }
     }

@@ -15,3 +15,4 @@ jobs:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_SODNARTS_TODO }}'
           projectId: sodnarts-todo
+          args: deploy -P prod --only hosting:prod

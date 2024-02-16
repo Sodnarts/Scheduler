@@ -44,7 +44,6 @@ const SignUp = () => {
           placeholder="Enter name"
           onChange={setName}
           color={InputColor.GREEN}
-          autoFocus
           className="sign-up--input"
         />
         <InputField

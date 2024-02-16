@@ -10,9 +10,9 @@ const getDayName = (day: Day | -1) => {
       return 'Wednesday';
     case 3:
       return 'Thursday';
-    case 5:
-      return 'Friday';
     case 4:
+      return 'Friday';
+    case 5:
       return 'Saturday';
     case 6:
       return 'Sunday';
